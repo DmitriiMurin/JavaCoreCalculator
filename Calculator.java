@@ -10,7 +10,8 @@ public class Calculator {
     BinaryOperator<Integer> divide = (x, y) -> {
         if (y != 0) return x / y;
         else {
-            throw new ArithmeticException("Divide by ZERO");
+            System.out.println("Divide by ZERO!");
+            return Integer.MAX_VALUE;
         }
     };
     UnaryOperator<Integer> pow = x -> x * x;
